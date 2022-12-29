@@ -72,13 +72,43 @@ body {
 
 .content-2 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    min-height: 20vh;
-    max-height: 20vh;
+    align-items: center;
+    min-height: 25vh;
+    max-height: 25vh;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.info-plc {
+    border: solid;
+    border-width: 2px;
+    border-color: #3882f6;
+    border-radius: 10%;
+    height: 100px;
+    width: 100px;
 }
 
 .content-3 {
     display: flex;
+    flex-direction: column;
     background-color: #e5e7eb;
     min-height: 20vh;
     max-height: 20vh;
@@ -86,10 +116,42 @@ body {
     align-items: center;
 }
 
+
 .content-4 {
     display: flex;
-    min-height: 20vh;
-    max-height: 20vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+.content-4 h5 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.content-4 p {
+    font-size: 10px;
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 50vh;
+    max-width: 50vh;
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 5px 25px;
+    color: white;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -116,7 +178,7 @@ a {
     text-decoration: none;
 }
 
-button {
+.sign-up-main {
     background-color: #3882f6;
     border: none;
     text-align: center;
@@ -126,4 +188,23 @@ button {
     padding: 5px;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+.sign-up-alt {
+    background-color: #3882f6;
+    border: solid;
+    border-color: white;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+blockquote {
+    font-weight: 100;
+    font-size: 20px;
+    font-style: italic;
+    max-width: 50vw;
 }
